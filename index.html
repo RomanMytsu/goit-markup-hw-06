@@ -18,12 +18,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Web Studio</title>
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo-link link" href="./index.html"
@@ -60,20 +60,103 @@
             </li>
           </ul>
         </address>
+        <button class="open-men-btn" type="button" data-menu-open>
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- Mobile Menu -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button class="close-men-btn" type="button" data-menu-close>
+            <svg class="close-men-icons" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item mob-acnive">
+              <a
+                class="mob-menu-link link mob-active current"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+        <ul class="mob-menu-contacts-list list">
+          <li>
+            <a
+              class="mob-menu-contacts-link mob-tel link"
+              href="tel:+110001111111"
+              target="_blank"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a
+              class="mob-menu-contacts-link mob-email link"
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">
+              <svg class="mob-soc-icons" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </header>
 
     <!-- Main content -->
     <main>
       <!--Hero  -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Our advantages -->
       <section class="advant">
@@ -138,6 +221,7 @@
           <ul class="about-list list">
             <li class="about-item">
               <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="iMac photo"
                 width="360"
@@ -146,6 +230,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="smartphone"
                 width="360"
@@ -154,6 +239,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="notebook and smartphone"
                 width="360"
@@ -171,6 +257,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/team-1.jpg 1x, ./images/team-1-2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="Mark Guerrero of photo"
                 width="264"
@@ -213,6 +300,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="Tom Ford of photo"
                 width="264"
@@ -255,6 +343,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="Camila Garcia of photo"
                 width="264"
@@ -297,6 +386,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="Daniel Wilson of photo"
                 width="264"
@@ -405,7 +495,7 @@
         </div>
         <div class="social-footer">
           <p class="social-text-footer">Social media</p>
-          <ul class="social-list-footet">
+          <ul class="social-list-footer">
             <li class="social-item-footer">
               <a class="social-link-footer" href="">
                 <svg class="social-icons-footer" width="24" height="24">
@@ -527,12 +617,13 @@
               class="input-check visually-hidden"
               value="true"
             />
-            <label for="user-privacy" class="check-text"
-              > <span class="check-block">
+            <label for="user-privacy" class="check-text">
+              <span class="check-block">
                 <svg class="check-icons" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-              </span> I accept the terms and conditions of the
+              </span>
+              I accept the terms and conditions of the
               <a class="privacy-link" href="">Privacy Policy</a></label
             >
           </div>
@@ -541,5 +632,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
