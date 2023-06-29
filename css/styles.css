@@ -76,6 +76,7 @@ h6 {
 }
 .header-container {
   display: flex;
+  justify-content: space-between;
 }
 .header-nav {
   display: flex;
@@ -102,11 +103,19 @@ h6 {
   display: none;
 }
 .open-men-btn {
-  display: block;
-  width: 32px;
-  height: 22px;
-  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 22px;
+  margin: 0;
+  padding: 0;
   border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.open-men-icons {
+  stroke: currentColor;
 }
 .mob-menu {
   position: fixed;
@@ -121,25 +130,27 @@ h6 {
   justify-content: space-between;
 }
 .close-men-btn {
-  display: block;
-  margin-left: auto;
-  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
   border: 1px solid #2e2f42;
-  background-color: #e7e9fc;
   color: #2e2f42;
-  border: none;
-  margin-bottom: 32px;
 }
 .close-men-icons {
   fill: currentColor;
 }
-.mob-menu-list {
-}
+
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
-  .mob-menu .mob-active {
-    color: var(--first-logo-color);
-  }
+}
+.mob-menu .mob-active {
+  color: var(--first-logo-color);
 }
 .mob-menu-link {
   font-size: 36px;
@@ -278,15 +289,17 @@ h6 {
   display: none;
 }
 .advant-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
   margin-bottom: 8px;
 }
 .advant-text {
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 /* About us */
@@ -519,8 +532,6 @@ h6 {
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
-}
-.form-email {
 }
 .input-email {
   font-weight: 400;
