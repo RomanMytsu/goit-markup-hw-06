@@ -28,10 +28,6 @@
   .container {
     max-width: 768px;
   }
-
-  .our-team > .container {
-    max-width: 552px;
-  }
   .open-men-btn {
     display: none;
   }
@@ -124,6 +120,7 @@
   }
   .team-item {
     width: calc((100% - 24px) / 2);
+    max-width: 264px;
   }
   .customers-item {
     width: calc((100% - 48px) / 3);
