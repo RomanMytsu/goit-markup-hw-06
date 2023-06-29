@@ -2,6 +2,9 @@
   .container {
     max-width: 428px;
   }
+  .hero-title {
+    font-size: 36px;
+  }
   .mob-menu .mob-tel {
     font-size: 36px;
   }
