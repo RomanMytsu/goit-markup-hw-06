@@ -11,6 +11,9 @@
   .customers-list {
     gap: 72px 16px;
   }
+  .portfolio-title {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 427px) {
   .mob-soc-list {
@@ -164,6 +167,23 @@
     margin: unset;
     margin-top: unset;
   }
+  .portfolio {
+    padding: 64px 0 96px 0;
+  }
+  .filters-list {
+    gap: 24px;
+    margin-bottom: 64px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+  .portfolio-list {
+    gap: 72px 24px;
+  }
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -268,5 +288,14 @@
   }
   .email-footer {
     margin-left: 80px;
+  }
+  .portfolio {
+    padding: 100px 0 120px 0;
+  }
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
   }
 }
